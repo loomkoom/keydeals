@@ -223,12 +223,16 @@ These are some tips and steps on how to set this project up and how I did it mys
 ## Screenshots
 <p align="right">(<a href="#top">back to top</a>)</p>
 What you end up with is a webpage with a datatable that you can search and sort for games you want to check.
+
 ### cloudflare dashboard
-![cf](https://imgur.com/UmJXkoq)
+![cf](https://imgur.com/UmJXkoq.png)
+
 ### table
-![table](https://imgur.com/Lv0WEEg)
+![table](https://imgur.com/Lv0WEEg.png)
+
 ### search
-![search](https://imgur.com/6P88BDT)
+![search](https://imgur.com/6P88BDT.png)
+
 
 
 <!-- ROADMAP -->
