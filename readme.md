@@ -211,5 +211,3 @@ What you end up with is a webpage with a datatable that you can search and sort 
 [forks-url]: https://github.com/kais-btl/keydeals/network/members
 [stars-shield]: https://img.shields.io/github/stars/kais-btl/keydeals.svg?style=for-the-badge
 [stars-url]: https://github.com/kais-btl/keydeals/stargazers
-[issues-shield]: https://img.shields.io/github/issues/repo/keydeals.svg?style=for-the-badge
-[issues-url]: https://github.com/kais-btl/keydeals/issues
