@@ -95,6 +95,45 @@ These are some tips and steps on how to set this project up and how I did it mys
 4. Run the uwsgi.py file
     The server should be up at localhost:500
 
+#### database
+1. database setup script:
+```mysql
+DROP TABLE IF EXISTS keydeals.store;
+DROP TABLE IF EXISTS keydeals.app;
+DROP TABLE IF EXISTS keydeals.catalogue;
+
+DROP SCHEMA IF EXISTS keydeals;
+CREATE SCHEMA keydeals;
+USE keydeals;
+SET NAMES utf8mb4;
+ALTER DATABASE keydeals CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin;
+
+CREATE TABLE keydeals.store (
+    storeId INT NOT NULL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+	link VARCHAR(150) NOT NULL,
+    icon VARCHAR(50)
+);
+
+CREATE TABLE keydeals.app (
+    appId INT NOT NULL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE keydeals.catalogue (
+    price FLOAT NOT NULL,
+    appId INT NOT NULL,
+    StoreId INT NOT NULL,
+	link VARCHAR(150) NOT NULL,
+    PRIMARY KEY (appId , storeId),
+    FOREIGN KEY (appId)
+        REFERENCES keydeals.app (appId),
+    FOREIGN KEY (storeId)
+        REFERENCES keydeals.store (storeId)
+);
+```
+
 ###  Hosting:
 #### uwsgi
 
