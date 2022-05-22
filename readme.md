@@ -16,7 +16,7 @@
 
   <p align="center">
     A simple website that compares the prices of steam keys from different sellers  <br/>
-    <a href="https://github.com/kais-btl/keydeals">View Demo</a>
+    <a href="https://youtu.be/PxzwyMUr13A">View Demo</a>
     ·
     <a href="https://github.com/kais-btl/keydeals/issues">Report Bug</a>
  </p>
